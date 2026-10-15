@@ -29,9 +29,7 @@ assembling the full model and training it on a small image dataset.
 
 Small 3-class image dataset (pizza, steak, sushi; 225 train / 75 test images) loaded via
 `torchvision.datasets.ImageFolder`.
-Trained for 10 epochs, results tracked with TensorBoard and matplotlib.
-
-(rest unchanged)
+Trained end-to-end, with loss and accuracy tracked using TensorBoard and matplotlib.
 
 ## Setup
 
