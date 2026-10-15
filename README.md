@@ -1,4 +1,4 @@
-# ViT Replication — PyTorch
+implementation in PyTorch
 
 A from-scratch implementation of the Vision Transformer (ViT) architecture in PyTorch,
 based on the paper "An Image is Worth 16x16 Words" (Dosovitskiy et al., 2021).
