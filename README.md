@@ -1,11 +1,11 @@
-implementation in PyTorch
+# Vision Transformer (ViT) Implementation in PyTorch
 
-A from-scratch implementation of the Vision Transformer (ViT) architecture in PyTorch,
+An implementation of the Vision Transformer (ViT) architecture in PyTorch,
 based on the paper "An Image is Worth 16x16 Words" (Dosovitskiy et al., 2021).
 
 ## What This Is
 
-This notebook walks through building a ViT from the ground up — manually constructing
+This notebook walks through building a ViT step by step — constructing
 each component of the architecture and verifying tensor shapes at each step before
 assembling the full model and training it on a small image dataset.
 
@@ -13,10 +13,10 @@ assembling the full model and training it on a small image dataset.
 
 - Patch embedding layer using `nn.Conv2d`
 - Class token and positional embeddings
-- Multi-head self-attention blocks
+- Multi-head self-attention blocks (using `nn.MultiheadAttention`)
 - Transformer encoder stack
 - MLP classification head
-- Full ViT assembled from scratch and trained end-to-end
+- Full ViT assembled and trained end-to-end
 
 ## Architecture Details
 
@@ -27,8 +27,11 @@ assembling the full model and training it on a small image dataset.
 
 ## Dataset
 
-Small custom image dataset loaded via `torchvision.datasets.ImageFolder`.
+Small 3-class image dataset (pizza, steak, sushi; 225 train / 75 test images) loaded via
+`torchvision.datasets.ImageFolder`.
 Trained for 10 epochs, results tracked with TensorBoard and matplotlib.
+
+(rest unchanged)
 
 ## Setup
 
